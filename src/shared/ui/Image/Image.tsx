@@ -9,5 +9,7 @@ interface ImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
 export const Image: React.FC<ImageProps> = (props: ImageProps) => {
   const { className, ...rest } = props;
 
-  return <img className={clx(className, "image")} {...rest} />;
+  const classes = clx(className, "image");
+
+  return <img className={classes} {...rest} />;
 };
