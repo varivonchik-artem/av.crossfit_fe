@@ -3,3 +3,9 @@
 @use "./app/styles/variables";
 @use "./app/styles/utils";
 @use "./app/styles/globals";
+
+@use "./app/styles/blocks/widgets/Header/Header.scss";
+@use "./app/styles/blocks/shared/Menu/Menu.scss";
+@use "./app/styles/blocks/shared/Button/Button.scss";
+@use "./app/styles/blocks/shared/Image/Image.scss";
+@use "./app/styles/blocks/shared/Button/variants/BurgerButton.scss";

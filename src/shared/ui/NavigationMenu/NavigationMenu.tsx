@@ -7,7 +7,7 @@ export interface MenuItem {
 
 interface NavigationMenuProps {
   items: MenuItem[];
-  className?: string;
+  className: string;
   ariaLabel?: string;
 }
 
@@ -16,16 +16,12 @@ export function NavigationMenu(props: NavigationMenuProps) {
 
   const classes = clx(className, "menu");
 
-  const listClass = clx(className && `${className}-list`);
-  const itemClass = clx(className && `${className}-item`);
-  const linkClass = clx(className && `${className}-link`);
-
   return (
     <nav className={classes} aria-label={ariaLabel}>
-      <ul className={listClass}>
+      <ul className="menu__list">
         {items.map((item) => (
-          <li key={item.href} className={itemClass}>
-            <a href={item.href} className={linkClass}>
+          <li key={item.href} className="menu__item">
+            <a href={item.href} className="menu__link">
               {item.label}
             </a>
           </li>
