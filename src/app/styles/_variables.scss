@@ -1,0 +1,21 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+
+  --gray-900: #131619;
+  --gray-800: #404040;
+  --gray-400: #c4c4c4;
+
+  --border-radius: 30px;
+  --border: 1px solid var(--white);
+
+  --font-family-base: "Heebo", sans-serif;
+  --font-family-accent: "Yantramanav", sans-serif;
+
+  --input-height: 54px;
+
+  --container-width: 1300px;
+  --container-padding-x: 15px;
+
+  --transition-duration: 0.2s;
+}
